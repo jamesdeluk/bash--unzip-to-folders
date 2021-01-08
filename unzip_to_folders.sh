@@ -5,9 +5,9 @@ for i in *.zip; do
   if [ $count -gt 1 ]; then
     filename=`echo ${i:0:-4}`;
     mkdir $filename;
-    unzip -d $filename -P infected $i;
+    unzip -d $filename $i;
   else
-    unzip -P infected $i;
+    unzip $i;
   fi;
   mv $i zips;
 done
