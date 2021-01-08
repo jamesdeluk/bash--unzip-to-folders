@@ -1,30 +1,34 @@
-$ ls -R
-/grace/is-happy.zip
-/grace/is-sad.zip
-/grace/is-scared.zip
+# bash--unzip-to-folders
 
-$ cd grace
+## pseudo-code example
 
-$ unzip -l is-happy.zip
-smile.txt
-my-favourite-things.pdf
+    $ ls -R
+    /grace/is-happy.zip
+    /grace/is-sad.zip
+    /grace/is-scared.zip
 
-$ unzip -l is-sad.zip
-depressing-poem.hwp
+    $ cd grace
 
-$ unzip is-scared.zip
-evil-orange.jpg
+    $ unzip -l is-happy.zip
+    smile.txt
+    my-favourite-things.pdf
 
-$ bash unzip_into_folders.sh
-_magic happens_
+    $ unzip -l is-sad.zip
+    depressing-poem.hwp
 
-$ cd ..
+    $ unzip is-scared.zip
+    evil-orange.jpg
 
-$ ls -R
-/grace/depressing-poem.hwp
-/grace/evil-orange.jpg
-/grace/is-happy/smile.txt
-/grace/is-happy/my-favourite-things.pdf
-/grace/zips/is-happy.zip
-/grace/zips/is-sad.zip
-/grace/zips/is-scared.zip
+    $ bash unzip_into_folders.sh
+    _magic happens_
+
+    $ cd ..
+
+    $ ls -R
+    /grace/depressing-poem.hwp
+    /grace/evil-orange.jpg
+    /grace/is-happy/smile.txt
+    /grace/is-happy/my-favourite-things.pdf
+    /grace/zips/is-happy.zip
+    /grace/zips/is-sad.zip
+    /grace/zips/is-scared.zip
